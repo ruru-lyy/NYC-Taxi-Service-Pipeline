@@ -14,8 +14,7 @@ You may access the dataset through the following link: https://storage.googleapi
 
 For reference, we will be using the data dictionary that is available at: https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf which is also attached here-
 
-![Alt text](https://example.com/path/to/image.png)
-
+![Alt text](https://github.com/ruru-lyy/NYC-Taxi-Service-Pipeline/blob/main/data_dict.png)
 
 ### Technologies Used
 
@@ -29,7 +28,9 @@ __Cloud Services:__
 
 __Data Pipeine Tool__ - https://www.mage.ai/
 
-## Data Modeling 
+### Data Modeling 
+
+First off, we will be creating the E-R model (Entity Relationship) considering all the 
 
 
 
