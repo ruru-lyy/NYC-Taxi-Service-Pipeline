@@ -51,7 +51,7 @@ Following is the data model that was referenced in the entire data engineering p
 
 **Note:** Some of these columns like trip_distance or fare_amount may seem like measures but for learning purposes they are placed in dimension tables here. It’s all about making it easier to understand relationships in the data.
 
-### Quick Tutorial
+### Tutorial
 
 - **Step 1:** First step is to upload the data onto cloud and here in this project, we are using GCP. You need to register and set up a Cloud Account if you dont have one. It provides you $300 free credits which translates to roughly 25k indian rupees. You can track how much your GCP expenses are (which depends on the type of VM instance you're using, hours, etc) using a [GCP Pricing Calculater](https://cloud.google.com/products/calculator)
 - **Step 2:** From the Compute Engine, create a VM instance and we'll be using SSH browser to run Mage on it. I've used e2-standard-8, 8vCPU and 32GB memory because my mage server kept crashing when running the transformation code. On the SSH terminal, make sure to install python alongwith libs like pandas, dbt (data build tool) and mage to build the ETL pipeline.
@@ -59,7 +59,12 @@ Following is the data model that was referenced in the entire data engineering p
 - **Step 4**: Mage provides templates for data loader, transform code, and data exporter all which are essential for this project. I think it is a good practice to have your initial test code in Jupyter notebook especially data cleaning and data modeling in this case so it makes it easier to modify the rest of the transformer code.
 - **Step 5**: The output of the transformer code serves as input to the data exporter and that's how we will load the transformed code onto BigQuery. Just make sure to download the JSON file from GCP containing the API credentials for authentication. This file includes details like your project ID, private key, and client email, which are used to securely access and modify resources in your GCP account.
 
-[!Tree](https://github.com/ruru-lyy/NYC-Taxi-Service-Pipeline/blob/main/mage/tree.png)
+The tree created looks like this-
+
+![Tree](https://github.com/ruru-lyy/NYC-Taxi-Service-Pipeline/blob/main/mage/tree.png)
+
+- **Step 6**: After loading the data onto BigQuery, we can run a few SQL queries to extract useful insights.
+
 
 
 
