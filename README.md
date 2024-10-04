@@ -12,7 +12,7 @@ __Note:__ The data used in the attached datasets were collected and provided to 
 
 You may access the dataset through the following link: https://storage.googleapis.com/taxi-service-data-engineering-niru/nyc_taxi_data.csv 
 
-![Dataset]()
+![Dataset](https://github.com/ruru-lyy/NYC-Taxi-Service-Pipeline/blob/main/data/data_screenshot.png)
 
 For reference, we will be using the data dictionary that is available at: https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf which is also attached here-
 
