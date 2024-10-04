@@ -63,7 +63,7 @@ The tree created looks like this-
 
 ![Tree](https://github.com/ruru-lyy/NYC-Taxi-Service-Pipeline/blob/main/mage/tree.png)
 
-- **Step 6**: After loading the data onto BigQuery, we can run a few SQL queries to extract useful insights.
+- **Step 6**: Finally, after loading the data onto BigQuery, we can perform data analysis and run SQL queries to extract insights. You may refer the ![dashboard](https://github.com/ruru-lyy/NYC-Taxi-Service-Pipeline/blob/main/NYC_Taxi_Service_Dashboard.pdf) to retrieve actionable insights.
 
 
 
