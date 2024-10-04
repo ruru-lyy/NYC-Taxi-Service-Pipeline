@@ -51,7 +51,9 @@ Following is the data model that was referenced in the entire data engineering p
 
 **Note:** Some of these columns like trip_distance or fare_amount may seem like measures but for learning purposes they are placed in dimension tables here. It’s all about making it easier to understand relationships in the data.
 
-### 
+### Tutorial
+
+- Step1: First step is to upload the data onto cloud and here in this project, we are using GCP. You need to register and set up a Cloud Account if you dont have one. It provides you $300 free credits which translates to roughly 25k indian rupees. You can track how much your GCP expenses are (which depends on the type of VM instance you're using, hours, etc) using a [GCP Pricing Calculater](https://cloud.google.com/products/calculator)
 
 
 
