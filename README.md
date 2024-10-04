@@ -53,9 +53,9 @@ Following is the data model that was referenced in the entire data engineering p
 
 ### Quick Tutorial
 
-- Step1: First step is to upload the data onto cloud and here in this project, we are using GCP. You need to register and set up a Cloud Account if you dont have one. It provides you $300 free credits which translates to roughly 25k indian rupees. You can track how much your GCP expenses are (which depends on the type of VM instance you're using, hours, etc) using a [GCP Pricing Calculater](https://cloud.google.com/products/calculator)
-- Step2: From the Compute Engine, create a VM instance and we'll be using SSH browser to run Mage on it. I've used e2-standard-8, 8vCPU and 32GB memory because my mage server kept crashing when running the transformation code. On the SSH terminal, make sure to install python alongwith libs like pandas, dbt (data build tool) and mage to build the ETL pipeline.
-- Step3:  I think it is a good practice to have your initial test code in Jupyter notebook especially data cleaning and data modeling in this case. 
+- **Step 1:** First step is to upload the data onto cloud and here in this project, we are using GCP. You need to register and set up a Cloud Account if you dont have one. It provides you $300 free credits which translates to roughly 25k indian rupees. You can track how much your GCP expenses are (which depends on the type of VM instance you're using, hours, etc) using a [GCP Pricing Calculater](https://cloud.google.com/products/calculator)
+- **Step 2:** From the Compute Engine, create a VM instance and we'll be using SSH browser to run Mage on it. I've used e2-standard-8, 8vCPU and 32GB memory because my mage server kept crashing when running the transformation code. On the SSH terminal, make sure to install python alongwith libs like pandas, dbt (data build tool) and mage to build the ETL pipeline.
+- **Step 3:**  For this next step, you can take a quick look at the [Mage documentation](https://github.com/mage-ai/mage-ai) in case you're not familiar with how it works. It is a cloud-based data pipeline builder similar to tools like [Airflow](https://airflow.apache.org/docs/apache-airflow/stable/index.html) which is powered by AI.  I think it is a good practice to have your initial test code in Jupyter notebook especially data cleaning and data modeling in this case. 
 
 
 
