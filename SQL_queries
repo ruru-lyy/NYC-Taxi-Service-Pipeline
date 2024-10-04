@@ -1,0 +1,21 @@
+-- Find top 10 pickup locations based on number of trips
+SELECT
+    pickup_location_id,
+    count(*) AS num_trips
+  FROM
+    `my-test-project-437315.nyc_taxi_data_engineering.fact_table` AS fact_table
+  GROUP BY 1
+ORDER BY
+  num_trips DESC
+LIMIT 10;
+
+
+– Extract tip amount based on payment types
+– eg. if someone is using credit card to pay, they may tip higher whereas if someone is using cash, they may tip lower
+SELECT b.payment_type_name, SUM(a.tip_amount) FROM `my-test-project-437315.nyc_taxi_data_engineering.fact_table` a
+JOIN `my-test-project-437315.nyc_taxi_data_engineering.payment_type_dim` b
+ON a.payment_type_id = b.payment_type_id
+GROUP BY b.payment_type_name
+
+
+
